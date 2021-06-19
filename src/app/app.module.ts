@@ -9,6 +9,7 @@ import { FileComponent } from './Components/Fields/file/file.component';
 import { RadioComponent } from './Components/Fields/radio/radio.component';
 import { TextBoxComponent } from './Components/Fields/text-box/text-box.component';
 import { FieldBuilderComponent } from './Components/field-builder/field-builder.component';
+import { DynamicFormBuilderComponent } from './Components/dynamic-form-builder/dynamic-form-builder.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FieldBuilderComponent } from './Components/field-builder/field-builder.
     RadioComponent,
     TextBoxComponent,
     FieldBuilderComponent,
+    DynamicFormBuilderComponent,
   ],
   imports: [
     BrowserModule,
