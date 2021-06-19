@@ -1,0 +1,3 @@
+<select class="form-control" [id]="field.name" [formControl]="form">
+    <option *ngFor="let opt of field.options" [value]="opt.key">{{opt.value}}</option>
+</select>

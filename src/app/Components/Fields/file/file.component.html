@@ -1,0 +1,20 @@
+<div [formGroup]="form">
+  <!-- (hovered)="toggleHover($event)" [class.hovering]="isHovering" -->
+    <div *ngIf="!field.value" class="drop-container dropzone" dropZone 
+      (dropped)="field.onUpload($event)" >
+      <p class="m-0">
+        Drag a file here or
+        <label class="upload-button">
+          <!-- (change)="field.onUpload($event.target.files)" -->
+          <input type="file" multiple="" > browse
+        </label>
+        to upload.
+      </p>
+    </div>
+    <div *ngIf="field.value">
+      <!-- <button type="button" class="btn btn-primary">Change</button> -->
+      <div class="card">
+        <img class="card-img-top" [src]="field.value">
+      </div>
+    </div>
+  </div> 
