@@ -8,6 +8,7 @@ import { DropDownComponent } from './Components/Fields/drop-down/drop-down.compo
 import { FileComponent } from './Components/Fields/file/file.component';
 import { RadioComponent } from './Components/Fields/radio/radio.component';
 import { TextBoxComponent } from './Components/Fields/text-box/text-box.component';
+import { FieldBuilderComponent } from './Components/field-builder/field-builder.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TextBoxComponent } from './Components/Fields/text-box/text-box.componen
     FileComponent,
     RadioComponent,
     TextBoxComponent,
+    FieldBuilderComponent,
   ],
   imports: [
     BrowserModule,
