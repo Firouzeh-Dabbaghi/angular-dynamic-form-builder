@@ -13,6 +13,7 @@ import { DynamicFormBuilderComponent } from './Components/dynamic-form-builder/d
 import { CreateFieldsFormComponent } from './Components/create-fields-form/create-fields-form.component';
 import { FrmDynamicComponent } from './Components/frm-dynamic/frm-dynamic.component';
 import { PresentationComponent } from './Components/presentation/presentation.component';
+import { SortablejsModule } from 'ngx-sortablejs';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PresentationComponent } from './Components/presentation/presentation.co
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    SortablejsModule.forRoot({ animation: 150 }),
   ],
   providers: [],
   bootstrap: [AppComponent]
