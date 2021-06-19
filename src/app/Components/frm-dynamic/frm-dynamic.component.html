@@ -1,0 +1,10 @@
+<div class="col-md-12 col-sm-12">
+    <div class="card">
+        <div class="card-header">نمایش فرم های داینامیک</div>
+        <div class="card-body">
+            <form [formGroup]="form">
+                <app-dynamic-form-builder [formGroup]="form" [fields]="getFields()"></app-dynamic-form-builder>
+            </form>
+        </div>
+    </div>
+</div>
