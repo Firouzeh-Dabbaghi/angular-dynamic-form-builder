@@ -6,13 +6,7 @@ import { Fields } from '../Fields/fields';
   templateUrl: './presentation.component.html',
   styleUrls: ['./presentation.component.css']
 })
-export class PresentationComponent implements OnInit {
+export class PresentationComponent {
   tab=1;
   getfields: Fields[]=[];
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
