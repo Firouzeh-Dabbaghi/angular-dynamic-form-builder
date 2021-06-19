@@ -1,0 +1,35 @@
+<div class="portlet-body">
+    <div class="row">
+        <div class="col-md-2 col-xl-1 col-sm-12 col-xs-12 border-left">
+            <ul class="items_ul">
+                <li (click)="tab=1">
+                    <div class="item_link" [class.active]="tab==2">
+                        <i class="fa fa-table vami"></i>
+                        <span class="item_name vami">ساخت فرم
+                        </span>
+                    </div>
+                </li>
+
+                <li (click)="tab=2">
+                    <div class="item_link" [class.active]="tab==1">
+                        <i class="fa fa-paper-plane"></i>
+                        <span class="item_name vami">نمایش فرم
+                        </span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <!---محتوای اصلی -->
+        <div class="col-md-10 col-xl-11 col-sm-11 col-xs-11">
+            <div class="main-content">
+                <div class="dashboard_container">
+                    <app-create-fields-form (getItem)="getfields=$event" *ngIf="tab==1"></app-create-fields-form>
+                    <app-frm-dynamic [tmpfields]="getfields" *ngIf="tab==2"></app-frm-dynamic>
+                </div>
+            </div>
+        </div>
+        <!---انتهای محتوای اصلی  -->
+    </div>
+</div>

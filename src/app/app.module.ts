@@ -12,6 +12,7 @@ import { FieldBuilderComponent } from './Components/field-builder/field-builder.
 import { DynamicFormBuilderComponent } from './Components/dynamic-form-builder/dynamic-form-builder.component';
 import { CreateFieldsFormComponent } from './Components/create-fields-form/create-fields-form.component';
 import { FrmDynamicComponent } from './Components/frm-dynamic/frm-dynamic.component';
+import { PresentationComponent } from './Components/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FrmDynamicComponent } from './Components/frm-dynamic/frm-dynamic.compon
     DynamicFormBuilderComponent,
     CreateFieldsFormComponent,
     FrmDynamicComponent,
+    PresentationComponent,
   ],
   imports: [
     BrowserModule,
